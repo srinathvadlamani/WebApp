@@ -29,14 +29,15 @@ public class login_junit {
 	public void test() throws ServletException, IOException
 	{
 		
-		
+		/*
 		MockHttpServletRequest request = new MockHttpServletRequest();
 		MockHttpServletResponse response = new MockHttpServletResponse(); response.setContentType("text/html;charset=UTF-8");
 		request.addParameter("username", "guest");
 		request.addParameter("userpassword", "guest");
 		
 		obj.doPost(request, response);
-		
+		*/
+		assertTrue(false);
 	}
 	
 	
