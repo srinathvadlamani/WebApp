@@ -28,7 +28,7 @@ public class createpage_junit {
 	@Test
 	public void test() throws ServletException, IOException
 	{
-		
+		/*
 		
 		MockHttpServletRequest request = new MockHttpServletRequest();
 		
@@ -40,7 +40,8 @@ public class createpage_junit {
 		 request.addParameter("status", "NEW");
 		
 		obj.doPost(request, response);
-		
+		*/
+		assertTrue(false);
 	}
 	
 	
