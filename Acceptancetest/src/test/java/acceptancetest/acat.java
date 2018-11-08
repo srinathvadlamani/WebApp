@@ -14,6 +14,7 @@ public class acat {
 	public WebDriverWait wait;
 	public String URL = "http://18.218.201.217:8080/ProdWebapp";
 	public String URL1 = "http://18.218.201.217:8080/ProdWebapp/avncreatepage.jsp";
+	public String URL2 = "https://www.google.com";
 	//public String URL = "http://localhost:8080/AVNCommunication-1.0/avnlogin.jsp";
 	//public String URL1 = "http://localhost:8080/AVNCommunication-1.0/avncreatepage.jsp";
 	
@@ -24,7 +25,9 @@ public class acat {
 		wait = new WebDriverWait(driver, 10);
 		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//*[@id="lst-ib"]")).isDisplayed();
 		// Login Page content check
+		/*
 		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
 		driver.findElement(By.name("username")).isDisplayed();
 		driver.findElement(By.name("userpassword")).isDisplayed();
@@ -34,10 +37,10 @@ public class acat {
 		driver.findElement(By.name("username")).sendKeys("guest");
 		driver.findElement(By.name("userpassword")).sendKeys("guest");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);*/
 	}
 
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	public void repairticket() throws Exception {
 		WebElement welcome = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//h2[text()='WELCOME TO YOUR ACCOUNT OVERVIEW']")));
@@ -88,6 +91,6 @@ public class acat {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
 		driver.quit();
-	}
+	}*/
 
 }
