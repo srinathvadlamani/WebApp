@@ -18,6 +18,7 @@ public class ftat {
 	public WebDriverWait wait;
 	public String URL = "http://18.217.70.9:8080/QAWebapp/";
 	public String URL1 = "http://18.217.70.9:8080/QAWebapp/avncreatepage.jsp";
+	public String URL2 = "https://www.google.com";
 	//public String URL = "http://localhost:8080/AVNCommunication-1.0/avnlogin.jsp";
 	//public String URL1 = "http://localhost:8080/AVNCommunication-1.0/avncreatepage.jsp";
 	 
@@ -31,7 +32,9 @@ public class ftat {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		// Login Page content check
 		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
-		driver.findElement(By.name("username")).isDisplayed();
+		driver.findElement(By.xpath("//*[@id="lst-ib"]")).isDisplayed();
+		
+		/*driver.findElement(By.name("username")).isDisplayed();
 		driver.findElement(By.name("userpassword")).isDisplayed();
 		driver.findElement(By.xpath("//button[text()='Login']")).isDisplayed();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -39,9 +42,9 @@ public class ftat {
 		driver.findElement(By.name("username")).sendKeys("guest");
 		driver.findElement(By.name("userpassword")).sendKeys("guest");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);*/
 	}
-
+/*
 	@Test(priority = 1)
 	public void viewrepairticket() throws Exception {
 		WebElement welcome = wait.until(ExpectedConditions
@@ -111,5 +114,5 @@ public class ftat {
 		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
 		driver.quit();
 	}
-
+*/
 }
